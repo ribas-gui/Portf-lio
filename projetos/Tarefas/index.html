@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📋 Minhas Tarefas</h1>
+
+    <div class="input-area">
+        <input type="text" id="input-tarefa" placeholder="Digite uma tarefa...">
+        <button id="btn-add">+</button>
+    </div>
+
+    <div class="top-bar">
+        <div class="filtros">
+            <button data-filter="all" class="ativo">Todas</button>
+            <button data-filter="active">Pendentes</button>
+            <button data-filter="done">Concluídas</button>
+        </div>
+
+        <span id="contador"></span>
+    </div>
+
+    <ul id="lista"></ul>
+
+    <button id="limpar" class="limpar">Limpar concluídas</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    background: #0f172a;
+}
+
+header input, header select {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+#carrinho-btn {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    background: #00eaff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* CARRINHO */
+.carrinho {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #111;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.carrinho.ativo {
+    right: 0;
+}
+
+/* QUANTIDADE */
+.qtd {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* CHECKOUT */
+.checkout {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

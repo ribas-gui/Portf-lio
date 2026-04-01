@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒 Loja Dev</h1>
+
+    <input type="text" id="busca" placeholder="Buscar produto...">
+
+    <select id="filtro">
+        <option value="todos">Todos</option>
+        <option value="caro">Mais caros</option>
+        <option value="barato">Mais baratos</option>
+    </select>
+
+    <div id="carrinho-btn">
+        🛒 (<span id="contador">0</span>)
+    </div>
+</header>
+
+<main>
+    <div id="produtos" class="grid"></div>
+</main>
+
+<!-- CARRINHO -->
+<div id="carrinho" class="carrinho">
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+
+    <h3>Total: R$ <span id="total">0.00</span></h3>
+
+    <button id="checkoutBtn">Finalizar Compra</button>
+    <button onclick="fecharCarrinho()">Fechar</button>
+</div>
+
+<!-- CHECKOUT -->
+<div id="checkout" class="checkout">
+    <div class="checkout-box">
+        <h2>Pagamento</h2>
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Cartão">
+        <button id="pagarBtn">Pagar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

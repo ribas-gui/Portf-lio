@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: white;
+}
+
+.container {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+/* RESUMO */
+.resumo {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.resumo div {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BOTÕES */
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+#entradaBtn {
+    background: #00ff88;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#saidaBtn {
+    background: #ff4d4d;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FILTRO */
+.filtro-box {
+    margin: 25px 0; /* 👈 espaço corrigido */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* LISTA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255,255,255,0.05);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CORES */
+.positivo {
+    border-left: 5px solid #00ff88;
+}
+
+.negativo {
+    border-left: 5px solid #ff4d4d;
+}
+
+li span {
+    font-size: 13px;
+    opacity: 0.8;
+}

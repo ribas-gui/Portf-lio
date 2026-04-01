@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #020617;
+    color: #fff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.1);
+}
+
+/* INPUT */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#btn-add {
+    background: #00eaff;
+    font-size: 18px;
+}
+
+/* TOP BAR */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* FILTROS */
+.filtros button {
+    margin-right: 5px;
+    background: transparent;
+    border: 1px solid #00eaff;
+    color: #00eaff;
+}
+
+.filtros .ativo {
+    background: #00eaff;
+    color: #000;
+}
+
+/* LISTA */
+li {
+    background: rgba(255,255,255,0.05);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: grab;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* CONCLUÍDA */
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* BOTÕES */
+.acoes button {
+    margin-left: 5px;
+    background: transparent;
+    border: 1px solid #00eaff;
+    color: #00eaff;
+}
+
+/* LIMPAR */
+.limpar {
+    margin-top: 15px;
+    width: 100%;
+    background: #ff4d4d;
+    color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+    .container {
+        margin: 20px;
+    }
+}
+
+/* ANIMAÇÃO AO ENTRAR */
+.fade-in {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li:active {
+    cursor: grabbing;
+}
+
+/* EFEITO DURANTE DRAG */
+li.dragging {
+    opacity: 0.5;
+}

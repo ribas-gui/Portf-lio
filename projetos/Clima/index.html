@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>App de Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌦️ Clima</h1>
+
+    <div class="busca">
+        <input type="text" id="cidade" placeholder="Digite uma cidade...">
+        <button id="buscar">Buscar</button>
+        <button id="local">📍</button>
+    </div>
+
+    <p id="erro" class="erro"></p>
+    <div id="loading" class="loading"></div>
+
+    <div class="clima" id="clima">
+        <h2 id="nome"></h2>
+        <img id="icon">
+        <p id="temp"></p>
+        <p id="desc"></p>
+
+        <div class="info">
+            <span id="vento"></span>
+            <span id="umidade"></span>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

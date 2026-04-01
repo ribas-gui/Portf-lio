@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>💳 Controle Financeiro</h1>
+
+    <h2 id="saldo">R$ 0.00</h2>
+
+    <div class="resumo">
+        <div>
+            <p>Entradas</p>
+            <span id="entrada">R$ 0.00</span>
+        </div>
+        <div>
+            <p>Saídas</p>
+            <span id="saida">R$ 0.00</span>
+        </div>
+    </div>
+
+    <!-- FORM -->
+    <form id="form">
+        <input type="text" id="descricao" placeholder="Descrição">
+        <input type="text" id="valor" placeholder="Valor (ex: 10,50)">
+        <input type="date" id="data">
+
+        <div class="botoes">
+            <button type="button" id="entradaBtn">+ Entrada</button>
+            <button type="button" id="saidaBtn">- Saída</button>
+        </div>
+    </form>
+
+    <!-- FILTRO -->
+    <div class="filtro-box">
+        <label>Filtrar por mês:</label>
+        <input type="month" id="filtroData">
+    </div>
+
+    <!-- GRÁFICO -->
+    <canvas id="grafico"></canvas>
+
+    <!-- LISTA -->
+    <ul id="lista"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
