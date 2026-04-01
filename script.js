@@ -92,9 +92,7 @@ projetos.forEach(projeto => {
         </div>
     `;
 
-    // Clique no card abre modal
     card.addEventListener("click", (e) => {
-        // evita conflito com clique nos botões
         if (e.target.tagName !== "A") {
             abrirModal(projeto);
         }
@@ -103,7 +101,6 @@ projetos.forEach(projeto => {
     container.appendChild(card);
 });
 
-// MODAL
 const modal = document.getElementById("modal");
 const titulo = document.getElementById("modal-titulo");
 const descricao = document.getElementById("modal-descricao");
@@ -130,32 +127,26 @@ links.forEach(link => {
         const id = link.getAttribute("href");
         const secao = document.querySelector(id);
 
-        // remove de todas
         document.querySelectorAll("section").forEach(s => {
             s.classList.remove("section-ativa");
         });
 
-        // adiciona efeito
         setTimeout(() => {
             secao.classList.add("section-ativa");
         }, 300);
 
-        // remove depois
         setTimeout(() => {
             secao.classList.remove("section-ativa");
         }, 1000);
     });
 });
 
-// FLIP NO TOQUE (mobile)
 document.querySelectorAll(".flip-card").forEach(card => {
     card.addEventListener("click", () => {
         card.classList.toggle("ativo");
     });
 });
 
-
-// ANIMAÇÃO AO ROLAR
 const items = document.querySelectorAll(".timeline-item");
 
 const observer = new IntersectionObserver(entries => {
